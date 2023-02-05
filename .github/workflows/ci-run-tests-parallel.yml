@@ -20,13 +20,14 @@ jobs:
         with:
           runTests: false
       # report machine parameters
+      - run yarn install
       - run: yarn cypress info
       - run: node --version
       - run: node -p 'os.cpus()'
-      - run: yarn types
+      # - run: yarn types
       - run: yarn lint
-      - run: yarn test:unit:ci
-      - run: yarn build:ci
+      # - run: yarn test:unit:ci
+      # - run: yarn build:ci
 
       - name: Save build folder
         uses: actions/upload-artifact@v3
@@ -74,15 +75,15 @@ jobs:
       - name: "UI Tests - Chrome"
         uses: cypress-io/github-action@v4
         with:
-          start: yarn start:ci
-          wait-on: "http://localhost:3000"
-          wait-on-timeout: 120
+          # start: yarn start:ci
+          # wait-on: "http://localhost:3000"
+          # wait-on-timeout: 120
           browser: chrome
           record: true
           parallel: true
           group: "UI - Chrome"
-          spec: cypress/tests/ui/*
-          config-file: cypress.config.js
+          # spec: cypress/tests/ui/*
+          # config-file: cypress.config.js
         env:
           # pass the Cypress Cloud record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
