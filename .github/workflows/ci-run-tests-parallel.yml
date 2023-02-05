@@ -57,11 +57,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Download the build folders
-        uses: actions/download-artifact@v3
-        with:
-          name: build
-          path: build
+      # - name: Download the build folders
+      #   uses: actions/download-artifact@v3
+      #   with:
+      #     name: build
+      #     path: build
 
       - name: Cypress info
         run: npx cypress info
@@ -75,6 +75,7 @@ jobs:
       - name: "UI Tests - Chrome"
         uses: cypress-io/github-action@v4
         with:
+          run: npx cypress run
           # start: yarn start:ci
           # wait-on: "http://localhost:3000"
           # wait-on-timeout: 120
