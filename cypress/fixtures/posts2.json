@@ -1,0 +1,14 @@
+{
+    "posts": [
+        { 
+            "_id": "63d8fc59725a35bb5703cce7", "content": "22", "creatorId": "63d8fbe2725a35bb5703cce6", "createdAt": "2023-01-31T11:32:41.266Z", "creator": {
+                "_id": "63d8fbe2725a35bb5703cce6", "profilePicture": null, "name": "Yasol", "username": "yasol", "bio": "" 
+            } 
+        },
+        { "_id": "63d4156227f523be42083ff6", "content": "let's check", "creatorId": "63d41556325098147d2f31df", "createdAt": "2023-01-27T18:18:10.167Z", "creator": { 
+            "_id": "63d41556325098147d2f31df", "profilePicture": null, "name": "test", "username": "igor", "bio": "" 
+            } 
+        }
+    ]
+
+}

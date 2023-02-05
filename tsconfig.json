@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["@applitools/eyes-cypress", "cypress", "node"],
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "@fixtures/*": [
+        "cypress/fixtures/*"
+      ]
+    },
+    "moduleResolution": "node" 
+  },
+  "files": ["./node_modules/@applitools/eyes-cypress/types/index.d.ts"],
+  "include": ["**/*.ts"]
+}

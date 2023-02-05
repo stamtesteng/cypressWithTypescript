@@ -1,0 +1,54 @@
+{
+    "posts": [
+        { 
+            "_id": "63d8fc59725a35bb5703cce7", "content": "22", "creatorId": "63d8fbe2725a35bb5703cce6", "createdAt": "2023-01-31T11:32:41.266Z", "creator": {
+                "_id": "63d8fbe2725a35bb5703cce6", "profilePicture": null, "name": "Yasol", "username": "yasol", "bio": "" 
+            } 
+        },
+        { 
+            "_id": "63d8fc2d808ca8fbd23d4b02", "content": "11", "creatorId": "63d8fbe2725a35bb5703cce6", "createdAt": "2023-01-31T11:31:57.546Z", "creator": { 
+                "_id": "63d8fbe2725a35bb5703cce6", "profilePicture": null, "name": "Yasol", "username": "yasol", "bio": "" 
+            } 
+        },
+        { 
+            "_id": "63d713d1d70537ea06c7514d", "content": "Demo", "creatorId": "63d713c9ec306be5900905ae", "createdAt": "2023-01-30T00:48:17.800Z", "creator": { 
+                "_id": "63d713c9ec306be5900905ae", "profilePicture": null, "name": "demo", "username": "demodemo", "bio": "" 
+            } 
+        }, 
+        { 
+            "_id": "63d6e3963a0b3bc1a33103cd", "content": "Que onda brothers¿?", "creatorId": "63d6e37e3bb2b6d8793a66ea", "createdAt": "2023-01-29T21:22:30.762Z", "creator": { 
+                "_id": "63d6e37e3bb2b6d8793a66ea", "profilePicture": null, "name": "Ian", "username": "ianyoel", "bio": "" 
+            } 
+        }, 
+        { 
+            "_id": "63d5ec4bf6580c102a44b7ea", "content": "hello world", "creatorId": "63d5ec26f6580c102a44b7e9", "createdAt": "2023-01-29T03:47:23.256Z", "creator": { 
+                "_id": "63d5ec26f6580c102a44b7e9", "profilePicture": null, "name": "avc", "username": "avc123", "bio": "" 
+            } 
+        }, 
+        { 
+            "_id": "63d5459fece3a871c8929855", "content": "my name is test and my name is tets and my name is test", "creatorId": "63d5457fddc2472bb867ee92", "createdAt": "2023-01-28T15:56:15.895Z", "creator": { 
+                "_id": "63d5457fddc2472bb867ee92", "profilePicture": null, "name": "kunal", "username": "kunal", "bio": "test\r\n" 
+            } 
+        }, 
+        { 
+            "_id": "63d54591ece3a871c8929854", "content": "how are you", "creatorId": "63d5457fddc2472bb867ee92", "createdAt": "2023-01-28T15:56:01.575Z", "creator": { 
+                "_id": "63d5457fddc2472bb867ee92", "profilePicture": null, "name": "kunal", "username": "kunal", "bio": "test\r\n" 
+            } 
+        }, 
+        { 
+            "_id": "63d5458bece3a871c8929853", "content": "noting ", "creatorId": "63d5457fddc2472bb867ee92", "createdAt": "2023-01-28T15:55:55.866Z", "creator": { 
+                "_id": "63d5457fddc2472bb867ee92", "profilePicture": null, "name": "kunal", "username": "kunal", "bio": "test\r\n" 
+            } 
+        }, 
+        { 
+            "_id": "63d453bba4854c7804d2f9b4", "content": "Nothing, it’s late…", "creatorId": "63c67a924876c29bcbc9cc12", "createdAt": "2023-01-27T22:44:11.891Z", "creator": { 
+                "_id": "63c67a924876c29bcbc9cc12", "profilePicture": "https://res.cloudinary.com/dbplcha6k/image/upload/v1674859562/sthvbg3gdo84c08l0clr.jpg", "name": "Mauceri", "username": "christian", "bio": "" 
+            } 
+        }, 
+        { "_id": "63d4156227f523be42083ff6", "content": "let's check", "creatorId": "63d41556325098147d2f31df", "createdAt": "2023-01-27T18:18:10.167Z", "creator": { 
+            "_id": "63d41556325098147d2f31df", "profilePicture": null, "name": "test", "username": "igor", "bio": "" 
+            } 
+        }
+    ]
+
+}
