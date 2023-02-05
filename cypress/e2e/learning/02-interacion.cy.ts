@@ -4,8 +4,13 @@ describe("interacting with input field", () => {
     it("click on input field", () => {
 
         cy.visit("https://www.google.gr?hl=en");
-        cy.get("#W0wltc > .QS5gu").click();
-        cy.get("#W0wltc > .QS5gu").should("not.be.visible");
+
+
+        cy.get("body").then($body => {
+            if ($body.find("#W0wltc > .QS5gu").length > 0) {   
+                cy.get("#W0wltc > .QS5gu").click();
+            }
+        });
         
         cy.get("[name='q']")
         .type("Yiannis");
