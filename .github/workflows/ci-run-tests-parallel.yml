@@ -1,0 +1,47 @@
+name: Parallel Cypress Tests
+
+on: [push]
+
+jobs:
+  test:
+    name: Cypress run
+    runs-on: ubuntu-22.04
+    strategy:
+      # when one test fails, DO NOT cancel the other
+      # containers, because this will kill Cypress processes
+      # leaving Cypress Cloud hanging ...
+      # https://github.com/cypress-io/github-action/issues/48
+      fail-fast: false
+      matrix:
+        # run 3 copies of the current job in parallel
+        containers: [1, 2, 3]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # because of "record" and "parallel" parameters
+      # these containers will load balance all found tests among themselves
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          record: true
+          parallel: true
+          group: 'E2E tests in parallel'
+        env:
+          # pass the Cypress Cloud record key as an environment variable
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          # Recommended: pass the GitHub token lets this action correctly
+          # determine the unique run id necessary to re-run the checks
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CYPRESS_email: ${{ secrets.CYPRESS_email }}
+          CYPRESS_password: ${{ secrets.CYPRESS_password }}
+          CYPRESS_nonExistingUser: ${{ secrets.CYPRESS_nonExistingUser }}
+          CYPRESS_wrongPassword: ${{ secrets.CYPRESS_wrongPassword }}
+          CYPRESS__id: ${{ secrets.CYPRESS__id }}
+          CYPRESS_emailVerified: ${{ secrets.CYPRESS_emailVerified }}
+          CYPRESS_profilePicture: ${{ secrets.CYPRESS_profilePicture }}
+          CYPRESS_name: ${{ secrets.CYPRESS_name }}
+          CYPRESS_username: ${{ secrets.CYPRESS_username }}
+          CYPRESS_bio: ${{ secrets.CYPRESS_bio }}
+          APPITOOLS_API_KEY: ${{ secrets.APPITOOLS_API_KEY }}
+          
