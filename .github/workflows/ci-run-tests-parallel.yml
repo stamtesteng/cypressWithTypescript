@@ -101,4 +101,4 @@ jobs:
           CYPRESS_name: ${{ secrets.CYPRESS_name }}
           CYPRESS_username: ${{ secrets.CYPRESS_username }}
           CYPRESS_bio: ${{ secrets.CYPRESS_bio }}
-          APPITOOLS_API_KEY: ${{ secrets.APPITOOLS_API_KEY }}
+          APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
