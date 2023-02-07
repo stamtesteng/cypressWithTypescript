@@ -13,18 +13,18 @@ describe("interacting with input field", () => {
         });
         
         cy.get("[name='q']")
-        .type("Yiannis");
+        .type("Yiannis R");
 
         cy.get('.aajZCb').should("be.visible");
         cy.get('.aajZCb li').should("have.length", "11").contains("Yiannis");
         
-        cy.get('.aajZCb').find('li').eq(1).contains("Ritsos");
-        cy.get('.aajZCb').find('li').eq(1).should('include.text', "Ritsos");
-        cy.get('.aajZCb').find('li').eq(1).should('not.include.text', "Latsis");
+        cy.get('.aajZCb').find('li').eq(0).contains("Ritsos");
+        cy.get('.aajZCb').find('li').eq(0).should('include.text', "Ritsos");
+        cy.get('.aajZCb').find('li').eq(0).should('not.include.text', "Latsis");
 
-        cy.get('.aajZCb li').eq(1).contains("Ritsos");
-        cy.get('.aajZCb li').eq(1).should('include.text', "Ritsos");
-        cy.get('.aajZCb li').eq(1).should('not.include.text', "Latsis");
+        cy.get('.aajZCb li').eq(0).contains("Ritsos");
+        cy.get('.aajZCb li').eq(0).should('include.text', "Ritsos");
+        cy.get('.aajZCb li').eq(0).should('not.include.text', "Latsis");
 
         // cy.get('.intro > video').should("not.exist");
         cy.get("[aria-label='Clear']").click();
