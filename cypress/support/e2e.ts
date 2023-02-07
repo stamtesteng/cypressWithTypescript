@@ -19,7 +19,8 @@ import './commands/editProfile'
 import '@applitools/eyes-cypress/commands'
 
 
-
+const registerCypressGrep = require('@cypress/grep')
+registerCypressGrep()
 
 
 // Alternatively you can use CommonJS syntax:

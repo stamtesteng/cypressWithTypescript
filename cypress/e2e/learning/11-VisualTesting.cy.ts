@@ -21,7 +21,7 @@ describe('Visual Testing', () => {
     })
 
 
-    it("Visual testing using Applitools", () => {
+    it("Visual testing using Applitools", { tags: ['@visual'] }, () => {
 
         /**
          * 
