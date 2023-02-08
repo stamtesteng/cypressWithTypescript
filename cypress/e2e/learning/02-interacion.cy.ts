@@ -27,6 +27,12 @@ describe("interacting with input field", () => {
         cy.get('.aajZCb li').eq(0).should('not.include.text', "Latsis");
 
         // cy.get('.intro > video').should("not.exist");
+        cy.get("body").then($body => {
+            if ($body.find("No thanks").length > 0) {   
+                cy.contains("No thanks").click();
+            }
+        });
+        
         cy.get("[aria-label='Clear']").click();
         cy.get('.aajZCb').should("not.be.visible");
         // cy.get('.intro > video').should("be.visible");
